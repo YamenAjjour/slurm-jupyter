@@ -1,0 +1,1 @@
+srun --gres=gpu:ampere --mem=40g --container-name=my-jupyter-container-6 --container-image=registry.webis.de/code-lib/public-images/yamen-jupyter --container-writable jupyter notebook --allow-root --ip 0.0.0.0
