@@ -9,6 +9,7 @@ RUN pip install transformers jupyter datasets sklearn wandb
 RUN pip3 install pandas simpletransformers
 RUN pip install stanza
 RUN pip3 install nltk
+RUN pip3 install tqdm boto3 requests regex sentencepiece sacremoses
 RUN python3 -c "import nltk;nltk.download('punkt')"
 RUN python3 -c "import stanza; stanza.download('en')"
 RUN python3 -m nltk.downloader punkt
