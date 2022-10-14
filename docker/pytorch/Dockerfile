@@ -4,7 +4,7 @@ RUN apt-get install -y software-properties-common
 RUN apt-get update
 RUN apt-get install -y python3
 RUN apt install -y python3-pip
-RUN pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+RUN pip install torch==1.8.2+cu113 torchvision==0.9.2+cu113 torchaudio==0.8.2 --extra-ind ex-url https://download.pytorch.org/whl/lts/1.8/cu111
 RUN pip install transformers jupyter datasets sklearn wandb
 RUN pip3 install pandas simpletransformers
 RUN pip install stanza
